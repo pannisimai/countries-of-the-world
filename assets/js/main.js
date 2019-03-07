@@ -18,8 +18,12 @@ function printCountry(data) {
       const { name, capital, flag, population, region } = myCountry;
       const img = `<img src=${flag}>`;
       const infos = `<h1>${name}</h1>
-      <img src=${flag}>`;
-      country.innerHTML = infos;
+      <img src=${flag}>
+      <p>Capital: ${capital}</p>
+      <p>Population: ${population}</p>
+      <p>Region: ${region}</p>`;
+      return infos;
     })
     .join("");
+  country.innerHTML = content;
 }
