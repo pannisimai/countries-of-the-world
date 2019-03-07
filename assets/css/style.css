@@ -11,7 +11,13 @@ img {
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
+}
+
+img,
+h1,
+p {
+  margin: auto;
+  padding-bottom: 20px;
+  display: block;
 }
